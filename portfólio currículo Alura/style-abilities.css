@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+--fonte-titulo:"Do Hyeon", sans-serif;
+--fonte-texto:"Lato", sans-serif;
+
+--cor-background: #2B2B2B;
+--cor-texto: #F6F6F6;
+--cor-rosa: #FF577F;
+--cor-hover: #5c5c5c;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    box-sizing: border-box;
+    background-color: var(--cor-background);
+    color: var(--cor-texto);
+    overflow-x: hidden;
+    background-image: url(images/codigo\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 1224px 970px;
+    background-attachment: fixed;
+    background-position: 7% 57.9%;
+}
+    /*background-image: url(images/codigo.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-attachment: fixed;
+    background-position: 50% 5%;*/
+
+.inicio{
+    padding: 1.5% 24% 0% 36.5%;
+    display: flex;
+}
+/*MECHA AQUI NO FLEX */
+.naveg{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.topo{
+    margin: 2px 40px 0 0;
+    padding: 0px 0px 0px 10px;
+    text-decoration:none;
+    font-family: var(--fonte-titulo);
+    font-size: 1.15rem;
+    color: var(--cor-rosa);
+}
+
+.topo-projeto{
+    padding: 4px 0 1px 0;
+}
+
+.projetos{
+    border-bottom: var(--cor-rosa) solid 3px;
+    margin: 2px 0px 0px 0px;
+}
+
+.home{
+    border-bottom: var(--cor-rosa) solid 3px; 
+}
+
+.home2{
+    padding: 0.9px 0px 0px 0px;
+}
+
+.habilidades{
+    border-bottom: var(--cor-rosa) solid 3px; 
+}
+
+.habilidades2{
+    padding: 5px 0px 1px 0px;
+}
+
+.nomeal2{
+    padding: 3% 0 0 0;
+}
+
+.nomeal{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 2.4% 15.5% 0px 11.1%;
+}
+
+.nome{
+    font-family: var(--fonte-titulo);
+    font-size: 1.75rem;
+    display: inline;
+}
+
+.nomecor{
+    font-family: var(--fonte-titulo);
+    font-size: 1.75rem;
+    color: var(--cor-rosa);
+    display: inline;
+}
+
+.apresentacao{
+    font-size: 1.10rem;
+    font-family: var(--fonte-texto);
+    font-weight: 400;
+    padding: 2% 2% 10% 0%;
+    display: flex;
+}
+
+.acesse{
+    font: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 1.3rem;
+    width: 650px;
+    margin: 30px 0px 0px 3%;
+    text-align: center;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    border: 2px solid;
+    border-color: var(--cor-rosa);
+    width: 300px;
+    text-align:center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 60px 14.5% 15px 7.5%;
+    padding: 16px 16px 16px 16px;
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+}
+
+.links2{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    border: 2px solid;
+    border-color: var(--cor-rosa);
+    width: 300px;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 15px 14.5%;
+    padding: 16px 16px 16px 16px;
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+}
+
+.links:hover{background-color: var(--cor-hover);}
+
+.links2:hover{background-color: var(--cor-hover);}
+
+.chao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 3.35% 8px 0.2% 8px;
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+}
+
+.abilidade-imagem{
+    width: 380px;
+    height: 380px;
+    padding: 0px 0px 0px 20%;
+}
+
+@media (max-width: 1300px) {
+    header,
+    main,
+    footer {width: 1300px;}
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media (max-width: 500px) {
+    header,
+    main,
+    footer {width: 500px;}
+    .abilidade-imagem{
+        display: flex;
+        flex-direction: column;
+    }
+    .nomeal{
+        display: flex;
+        flex-direction: column;
+    }
+    .body{align-items: center;}
+    header {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .inicio{
+        padding: 0px;
+    }
+    header {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .naveg{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*sentido horário
+justify content space between*/
